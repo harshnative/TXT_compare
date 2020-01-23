@@ -60,8 +60,12 @@ int stringCompare(string str1 , string str2)
 int main()
 {
 	long int input0=0;
-	string STRING1[1000];
-	string STRING0[1000];
+	long int arraySize=0;
+	cout<<"Enter the approx lines in the txt files - ";
+	cin>>arraySize;
+	system("cls");
+	string STRING1[arraySize];
+	string STRING0[arraySize];
 	string filename0 , filename1;
 	long int i=0;
 	long int j=0;
