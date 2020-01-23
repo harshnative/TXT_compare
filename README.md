@@ -1,30 +1,56 @@
-# token_machine
-A token machine for the shops having a pc and a thermal printing 
+# TXT_compare
+A txt compare software for comparing and finding differences btw the two txt files  
 
-please download the exe file from the releases section 
+this code is licensed under GPL3.0
 
-"THIS IS JUST A SIMPLE CODE, IT MAY HELP YOU ANYWAYS"
+you can find the direct executable file under the releases section of github 
+you can donwload and use the exe file , it is 100% virus free don't worry , you can change the icon and place it on destop so it looks nice 
+exe file provided is directly executable , thier is no need for the further installation 
 
+if the exe file is not runnning then follow the following steps
 
-
-if you are having a thermal printer and it plugged in and showing on the control panel under devices section , then just download the provided numpad and you are ready to go 
-
-we are also providing exe file , which may run on your computer ( avaiable under the release section of the github , rigth above )
-
-download the on screen numpad for the easy navigation inside the software if you have a touch screen pc or just use normal numpad
-, link to ON screen numpad -  https://sourceforge.net/projects/numpad-emulator/ 
-
-
-if the exe file is not runnning then follow the following steps 
 1. download the dev c++ form the following link { https://www.bloodshed.net/devcpp.html }
-2. install the software 
-3. open the software and press ctrl + n 
-4. copy the source code or just double click on the sourcecode.cpp and click compile 
-5. save the file and the exe file will open and you can use the exe file directly which is located where you have saved the file initially 
+2. install the software
+3. open the software and press ctrl + n
+4. copy the source code or just double click on the sourcecode.cpp and click compile
+5. save the file and the exe file will open and you can use the exe file directly which is located where you have saved the file initially
 
+"you can make changes and add feature accordingly or if you are not a developer , then you can contect me , hopefully i can help you"
 
+---------------------------------------------------
 
-"you can make changes and add feature accordingly or if you are not a developer , then you can contect me , hopefully i can help you" 
+working - 
+1.  in the starting program will ask you for a number input - 
+
+    enter 1 if you don't know the concept of directories - simple mode
+    or 
+    enter 2 if you know the directory destination of the files to be compared - adv mode
+    
+2.  now program will ask you for a number input 
+
+    enter 0 if you want to compare the txt files without considering the letter casing in this case the 'a' and 'A' is considered same 
+    or 
+    enter 1 if you want to compare the txt files considering the letter casing in this case the 'a' and 'A' are considered different 
+    
+3.  now if you are in simple mode , two txt files will be created in the folder from         were you have runned the .exe program named as TXT1.txt and TXT2.txt
+    
+    now go ahead and copy and paste the txt material of the files to be compared in the TXT1.txt and TXT2.txt respectively 
+    
+    then press enter and skip step 4
+    
+4. now if you are in adv mode , you will be asked to mention the filename with its          directory path - see the below example
+            
+    If your XYZ.txt file is present at Destop in user named john then your path should be C:\Users\john\Desktop\XYZ.txt
+    
+    after succesfull reading of txt file 1 you will asked for txt file 2
+    and the step will be repeated 
+    
+5. after the successfull completion - a "RESULT detail.txt" is formed on the desktop        contain the differences details 
+
+    also the percentage match is also shown 
+    
+    
+__________thank you for downloading and using the program__________
 
 
 
