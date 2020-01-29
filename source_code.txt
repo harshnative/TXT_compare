@@ -60,12 +60,9 @@ int stringCompare(string str1 , string str2)
 int main()
 {
 	long int input0=0;
-	long int arraySize=0;
-	cout<<"Enter the approx lines in the txt files - ";
-	cin>>arraySize;
 	system("cls");
-	string STRING1[arraySize];
-	string STRING0[arraySize];
+	string STRING1[100000];
+	string STRING0[100000];
 	string filename0 , filename1;
 	long int i=0;
 	long int j=0;
@@ -75,12 +72,14 @@ int main()
 		
 	returnx : ; 			//goto statement 
 	
+	cout<<"FILES ABOVE 100,000 lines are currently not comptable :(\n\n";
 	cout<<"1 for simple [ Procedure if you don't know the path directory ] "<<endl;
 	cout<<"2 for adv [ Procedure if you know the path directory ] \n"<<endl;
 	cout<<"ENTER THE MODE TO WORK : ";
 	cin>>input0;
 	
 	system("cls");
+	cout<<"FILES ABOVE 100,000 lines are currently not comptable :(\n\n";
 	cout<<"0 for comparing without considering the letter casing - a and A will be same\n\n";
 	cout<<"1 for comparing with considering the letter casing - a and A will be diff\n\n";
 	cout<<"Enter your choice : ";
@@ -222,7 +221,7 @@ int main()
 	ofstream infile6;
 	infile6.open ("C:\\Users\\harsh\\Desktop\\RESULT detail.txt", ios::out);
 	
-long long int larger = 0;
+	long long int larger = 0;
 	if(i>=j)
 	{
 		larger = i;
@@ -231,6 +230,32 @@ long long int larger = 0;
 	{
 		larger = j;
 	}
+	
+	
+	//asking for whether to compare whole file or not 
+	toCompare : ;	//goto statement 
+	cout<<"Total lines to be compared = "<<larger<<endl<<endl;
+	cout<<"Enter 0 below to compare the whole file\n\n";
+	cout<<"Do you want to compare whole file or upto line no - ";
+	int tempINPUT = 0;
+	cin>>tempINPUT;
+	if(tempINPUT > 0 && tempINPUT <= larger)
+	{
+		larger = tempINPUT;
+	}
+	else
+	if(tempINPUT == 0)
+	{
+		cout<<"";
+	}
+	else
+	{
+		system("cls");
+		cout<<"oops someTHING went wrong - \n\n";
+		system("pause");
+		goto toCompare;
+	}
+	
 	
 	long int result;
 	long int perCount=0,finalCount=0;
