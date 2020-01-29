@@ -45,7 +45,11 @@ working -
     after succesfull reading of txt file 1 you will asked for txt file 2
     and the step will be repeated 
     
-5. after the successfull completion - a "RESULT detail.txt" is formed on the desktop        contain the differences details 
+5. after that you will asked for a choice btw you want to compare whole file or not 
+    - if you want to compare whole file then simply enter 0
+    - if you want to compare to a to b then enter b first and enter a when asked 
+
+6. after the successfull completion - a "RESULT detail.txt" is formed on the desktop        contain the differences details 
 
     also the percentage match is also shown 
     
