@@ -237,10 +237,12 @@ int main()
 	cout<<"Total lines to be compared = "<<larger<<endl<<endl;
 	cout<<"Enter 0 below to compare the whole file\n\n";
 	cout<<"Do you want to compare whole file or upto line no - ";
-	int tempINPUT = 0;
+	int tempINPUT = 0 , lineNUMBER = 0;
 	cin>>tempINPUT;
 	if(tempINPUT > 0 && tempINPUT <= larger)
 	{
+		cout<<"\n\nEnter the line number to start from - ";
+		cin>>lineNUMBER;
 		larger = tempINPUT;
 	}
 	else
@@ -259,7 +261,7 @@ int main()
 	
 	long int result;
 	long int perCount=0,finalCount=0;
-	for(long int k=0;k<larger;k++)
+	for(long int k=lineNUMBER;k<larger;k++)
 	{
 		if(compareValue==0)
 		{
