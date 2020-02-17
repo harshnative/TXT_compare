@@ -67,19 +67,20 @@ int main()
 	long int i=0;
 	long int j=0;
 	long int compareValue = 10;
+	int longTXTstatus = 0;
 		
 		
 		
 	returnx : ; 			//goto statement 
 	
-	cout<<"FILES ABOVE 100,000 lines are currently not comptable :(\n\n";
+	cout<<"FILES ABOVE 100,000 lines are currently not compatable :(\n\n";
 	cout<<"1 for simple [ Procedure if you don't know the path directory ] "<<endl;
 	cout<<"2 for adv [ Procedure if you know the path directory ] \n"<<endl;
 	cout<<"ENTER THE MODE TO WORK : ";
 	cin>>input0;
 	
 	system("cls");
-	cout<<"FILES ABOVE 100,000 lines are currently not comptable :(\n\n";
+	cout<<"FILES ABOVE 100,000 lines are currently not compatable :(\n\n";
 	cout<<"0 for comparing without considering the letter casing - a and A will be same\n\n";
 	cout<<"1 for comparing with considering the letter casing - a and A will be diff\n\n";
 	cout<<"Enter your choice : ";
@@ -127,6 +128,11 @@ int main()
         {
 	        getline(infile0,STRING0[i]); 
 	        i++;
+	        if(i>=99999)
+	        {
+	        	longTXTstatus++;
+	        	break;
+			}
         }
 		infile0.close();
    			
@@ -155,6 +161,11 @@ int main()
         {
 	        getline(infile1,STRING1[j]); 
 	        j++;
+	        if(j>=99999)
+	        {
+	        	longTXTstatus++;
+	        	break;
+			}
         }
 		infile1.close();
 		system("cls");
@@ -170,6 +181,7 @@ int main()
 		cout<<"YOU have selected the simple mode\n\n";
 		cout<<"Two Files have been created in the folder in which this program is stored - named TXT1.txt and TXT2.txt\n\n";
 		cout<<"Go ahead and copy and paste the data of your two txt files into these respectively\n\n";
+		cout<<"OR follow - make your files to compare named as TXT1.txt and TXT2.txt and replace the files generated with that of your's\n\n";
 			
 			ofstream infile2;
 			infile2.open ("TXT1.txt", ios::out);
